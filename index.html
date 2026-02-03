@@ -2,15 +2,64 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nadie Site</title>
     <style>
-        body { background-color: #000; color: #fff; font-family: monospace; text-align: center; padding-top: 100px; }
-        .symbol { font-size: 100px; margin: 20px; }
+        body {
+            background-color: #050505;
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .nadie-container {
+            text-align: center;
+            max-width: 400px;
+        }
+
+        .main-img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            filter: grayscale(20%) contrast(110%);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+            transition: all 0.5s ease;
+        }
+
+        .main-img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
+
+        .symbol {
+            font-size: 2rem;
+            margin-top: 20px;
+            color: #555;
+            letter-spacing: 10px;
+        }
+
+        .footer-text {
+            font-size: 0.7rem;
+            margin-top: 40px;
+            opacity: 0.4;
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
-    <h1>NADIE SITE</h1>
-    <div class="symbol">∅</div>
-    <p>SISTEMA INICIADO</p>
+
+    <div class="nadie-container">
+        <img src="https://drive.google.com/uc?id=1CXjVpaRHrBSw0tClMsw_Qf4uEoo6q6Gi" alt="Nadiecito" class="main-img">
+        <div class="symbol">∅</div>
+        <p>EL ARTE CUIDARÁ DE TI</p>
+        <div class="footer-text">Sistema de Vacío // 2026</div>
+    </div>
+
 </body>
 </html>
